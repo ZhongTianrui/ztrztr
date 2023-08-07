@@ -1,0 +1,14 @@
+{
+  "name": "chattest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js"
+  },
+  "author": "ztrztr",
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^4.7.1"
+  }
+}

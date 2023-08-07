@@ -1,0 +1,52 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.btn{
+  width: 100px;
+  padding: 10px;
+  background-color: antiquewhite;
+  border: 2px solid rgb(235, 208, 172);
+  border-radius: 8px;
+}
+.top{
+  z-index: 100;
+  position:fixed;
+  width: 100%;
+  padding: 10px;
+  top:20px;
+  left:5px;
+  background-color: white;
+}
+.bd{
+  width: 100%;
+  position:relative;
+  top: 50px;
+  left: 30%;
+}
+.top_box{
+  background-color: white;
+  outline: 5px solid rgb(243, 194, 126);
+  outline-offset: -5px;
+  display:inline;
+  width: 100px;
+  border: 20px solid rgb(255, 255, 255);
+}
+.input{
+  width: 100px;
+  padding: 8px;
+  background-color: antiquewhite;
+  border: 2px solid rgb(234, 221, 205);
+}
+.login_box{
+  background-color: rgb(115, 179, 236);
+  width: 1px;
+  position:relative;
+  left: 80%;
+}
+.reg_box{
+  background-color: rgb(115, 179, 236);
+  width: 1px;
+  position:relative;
+  left: 83%;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script>
+        const socket = io("https://project-iprj6486d916ecef754cced0a16d-3000.preview.inscode.run");
+        // client-side
+        console.log(socket.connected); // true
+        socket.on("connect", () => {
+            console.log(socket.connected); // true
+        });
+    </script>
+</body>
+</html>
