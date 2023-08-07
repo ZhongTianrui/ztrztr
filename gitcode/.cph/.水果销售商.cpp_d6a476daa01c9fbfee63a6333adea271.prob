@@ -1,0 +1,1 @@
+{"name":"Local: 水果销售商","url":"d:\\ztrztr\\gitcode\\水果销售商.cpp","tests":[{"id":1691123996274,"input":"1 2\n3 3 12","output":"1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\ztrztr\\gitcode\\水果销售商.cpp","group":"local","local":true}

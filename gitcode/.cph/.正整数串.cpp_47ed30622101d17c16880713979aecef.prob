@@ -1,0 +1,1 @@
+{"name":"Local: 正整数串","url":"d:\\ztrztr\\gitcode\\正整数串.cpp","tests":[{"id":1691291402477,"input":"5\n0\n00\n23\n24\n31","output":"11\n191\n2\n38\n17"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\ztrztr\\gitcode\\正整数串.cpp","group":"local","local":true}

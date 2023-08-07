@@ -1,0 +1,1 @@
+{"name":"Local: 可疑的密码","url":"d:\\ztrztr\\gitcode\\可疑的密码.cpp","tests":[{"id":1691122846631,"input":"4\n9119 8248 7356 1151","output":"3\n9119 8248 7356"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\ztrztr\\gitcode\\可疑的密码.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: 质数时间","url":"d:\\ztrztr\\gitcode\\质数时间.cpp","tests":[{"id":1691129095310,"input":"3\n3 3 3 3 0\n3 3 3 5 59\n7 2 6 45 32\n7 29 15 30 54\n2 6 2 45 32\n12 3 16 56 8","output":"34\n24276\n127449"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\ztrztr\\gitcode\\质数时间.cpp","group":"local","local":true}
