@@ -2,13 +2,14 @@
 
 using namespace std;
 /*
+贪心+图论+并查集
 */
-int f[100005], n, m, cnt, maxn;
+int n, m, f[100005], cnt;
 struct node{
-    int f, t, d;
+    int from, to, data;
 } a[1000005];
 bool cmp(node x, node y) {
-    return x.d < y.d;
+    return x.data < y.data;
 }
 int find(int x) {
     return (f[x] == x ? x : f[x] = find(f[x]));
@@ -20,19 +21,25 @@ int main() {
         f[i] = i;
     }
     for (int i = 1; i <= m; i ++) {
-        cin >> a[i].f >> a[i].t >> a[i].d;
+        int x, y, z; cin >> x >> y >> z;
+        a[i].from = x;
+        a[i].to = y;
+        a[i].data = z;
     }
+    int ans = 0;
     sort(a + 1, a + m + 1, cmp);
     for (int i = 1; i <= m; i ++) {
-        int x = a[i].f, y = a[i].t;
+        // cout << a[i].data << ' ' << ans << " " << cnt << "\n";
+        int x = a[i].from, y = a[i].to;
         x = find(x);
         y = find(y);
+        // cout << x << " " << y << "\n";
         if (x == y) continue;
         f[x] = y;
         cnt ++;
-        maxn = max(maxn, a[i].d);
         if (cnt > n) break;
+        ans = max(ans, a[i].data);
     }
-    cout << maxn;
+    cout << cnt << " " << ans;
     return 0;
 }

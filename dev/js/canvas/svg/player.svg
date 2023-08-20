@@ -1,6 +1,12 @@
-<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
- <g id="Layer_1">
-  <title>Layer 1</title>
-  <ellipse transform="rotate(-0.0000223603 405.592 300.353)" stroke-width="0" stroke="#000" ry="12.00001" rx="12" id="svg_1" cy="300.50131" cx="405.7998" fill="#fde561"/>
- </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fde561;
+        height: 256;
+        width: 256;
+      }
+    </style>
+  </defs>
+  <circle id="椭圆_1" data-name="椭圆 1" class="cls-1" cx="128" cy="128" r="128"/>
 </svg>
