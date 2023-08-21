@@ -1,0 +1,1 @@
+{"name":"Local: graph-dfs","url":"d:\\ztrztr\\gitcode\\graph-dfs.cpp","tests":[{"id":1692531984605,"input":"4 5 1 2\n1 2 3\n3 2 1\n3 4 1\n4 1 3\n1 3 1","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\ztrztr\\gitcode\\graph-dfs.cpp","group":"local","local":true}
