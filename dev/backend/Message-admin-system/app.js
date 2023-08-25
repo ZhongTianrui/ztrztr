@@ -114,9 +114,9 @@ app.get('/loginPost', (req, res) => {
         }else{
             if (data >= 1) {
                 console.log("[DB] Login succes")
-                UserModel.countDocuments(req.query, function(err,dataa){
-                    console.log({"ok" : true, "id" : data.ID});
-                    res.send({"ok" : true, "ID" : data.ID});
+                UserModel.find(req.query, function(err,dataa){
+                    console.log({"ok" : true, "ID" : dataa[0].ID});
+                    res.send({"ok" : true, "ID" : dataa[0].ID});
                 });
             }
             else console.log(data), res.send({"ok" : false})
