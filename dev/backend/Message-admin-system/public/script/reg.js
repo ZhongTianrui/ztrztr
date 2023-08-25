@@ -8,7 +8,7 @@ form.addEventListener('submit', function(event) {
     const formData = new FormData(form);
 
     // 将数据发送到服务器
-    fetch('/regPost?un=' + document.getElementById("username").value + '&pwd=' + document.getElementById("password").value, {
+    fetch('/api/regPost?un=' + document.getElementById("username").value + '&pwd=' + document.getElementById("password").value, {
         method: 'GET'
     })
     .then(response => response.json())

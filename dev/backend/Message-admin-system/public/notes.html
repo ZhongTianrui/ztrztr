@@ -4,6 +4,22 @@
         <link rel="stylesheet" href="style/main.css">
     </head>
     <body>
+        <script>
+            var ID = localStorage.getItem('ID');
+            fetch('/api/getUserByID?ID=' + ID, {
+                method: 'GET'
+            })
+            .then(response => response.json())
+            .then(data => {
+                // 在此处理服务器响应
+                console.log(data);
+                // localStorage.setItem('ID', data.ID);
+            })
+            .catch(error => {
+                // 在此处理错误
+                console.error('Error:', error);
+            });
+        </script>
         <div class = "top">
             <div class = "top-index">
                 <!-- <div class = "top-box-left"><p>Web Note</p></div> -->

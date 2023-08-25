@@ -103,7 +103,7 @@ app.get('/zh', (req, res) => {
 });
 //Chinese
 
-app.get('/loginPost', (req, res) => {
+app.get('/api/loginPost', (req, res) => {
     console.log("[Server] An user login!Form:" + req.query);
     // if (req.query.un == "ztrztr" && req.query.pwd == "zz770011") res.send({"ok" : true});
     // else res.send({"ok" : false});
@@ -124,10 +124,21 @@ app.get('/loginPost', (req, res) => {
     })
 
 })
-app.get('/regPost', (req, res) => {
+app.get('/api/getUserByID', (req, res) => {
+    console.log("[Client] An user use getUserByID !Form:" + req.query);
+    // if (req.query.un == "ztrztr" && req.query.pwd == "zz770011") res.send({"ok" : true});
+    // else res.send({"ok" : false});
+    //记录数查询
+    UserModel.find({"ID":req.query.ID}, function(err,dataa){
+        if (dataa.length > 0) res.send(dataa[0]);
+        else res.send({"err":"NotFound!"})
+    });
+
+})
+app.get('/api/regPost', (req, res) => {
     console.log("[Server] An user reg!Form:" + req.query);
     var b = 0;
-    UserModel.countDocuments(req.query.un, function(err,data){
+    UserModel.countDocuments({"un" : req.query.un}, function(err,data){
         if(err){
             console.log(err)
         }else{
@@ -136,7 +147,7 @@ app.get('/regPost', (req, res) => {
             }
         }
     })
-    var len = 256;
+    var len = 10;
     var id = crypto.randomBytes(Math.ceil(len / 2)).toString('hex').slice(0, len);
     //创建模型
     console.log(id);
