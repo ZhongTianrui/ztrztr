@@ -1,0 +1,215 @@
+.login-form{
+    position: fixed;
+    top : 10%;
+}
+body{
+    position: relative;
+    font-family: 'Consolas';
+    background-color: #edf0f2;
+}
+p{
+    color: black;
+    text-decoration-line:none;
+}
+.top{
+    position: fixed;
+    top: 0px;
+    left: 0%;
+    height: 58px;
+    width: 100%;
+    /* border-radius: 2%; */
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+.top-index{
+    display:inline;
+    width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0px;
+	left: 50px;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+    text-align: center;
+    
+}
+.top-right{
+    display:inline;
+    width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0px;
+	left: 80%;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+    text-align: center;
+}
+.top-box-left{
+    float: left;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    float:left;
+    /* margin-right:2%;  两个li之间的距离 */
+    /* position: absolute; */
+    /* margin-left:40px;  */
+    left : 50px;
+    /* margin-right:50px;  */
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    border-top: 5px solid;
+    border-top-color: rgb(255, 255, 255);
+}
+.top-box-now{
+    float: left;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    float:left; /* 使li内容横向浮动，即横向排列  */
+    /* margin-right:2%;  两个li之间的距离 */
+    /* position: absolute; */
+    left : 50px;
+     /* margin-right:50px;  */
+    /* margin-left:40px; */
+    width: 100px;
+    border-top: 5px solid;
+    border-top-color: rgb(126, 219, 240);
+}
+.top-box{
+    float: left;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    float:left;
+    /* margin-right:2%;  两个li之间的距离 */
+    /* position: absolute; */
+    /* margin-left:40px;  */
+    left : 50px;
+    /* margin-right:50px;  */
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    border-top: 5px solid;
+    border-top-color: rgb(255, 255, 255);
+}
+.top-box:hover{
+    background-color: #edf0f2;
+    border-top: 5px solid;
+    border-top-color: rgb(82, 239, 187);
+}
+.top-box-now:hover{
+    background-color: #edf0f2;
+    border-top: 5px solid;
+    border-top-color: aquamarine;
+}
+.top-box-left:hover{
+    background-color: #edf0f2;
+    border-top: 5px solid;
+    border-top-color: aquamarine;
+}
+.index{
+	width: 50%;
+	height: auto;
+	position: absolute;
+	top: 200px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+    text-align: center;
+}
+.p-mid{
+    text-align: center;
+}
+.p-left{
+    text-align: left;
+}
+h1{
+    height: 50px;
+}
+.input{
+    font-family: 'Consolas';
+    border: 2px solid;
+    border-radius: 5px;
+    background-color: antiquewhite;
+    height: 30px;
+}
+.input:focus {
+    border: 3px solid;
+}
+.btn-rad100{
+   height: 30px;
+   width: 90px;
+   background-color: rgb(241, 193, 130); 
+   border-radius: 100px;
+   font-family: 'Consolas';
+}
+.btn-rad100:hover{
+    background-color: rgb(240, 218, 190);
+}
+.btn-rad0{
+    height: 30px;
+    width: 90px;
+    background-color: rgb(241, 193, 130); 
+    border-radius: 0px;
+    font-family: 'Consolas';
+}
+.btn-rad0:hover{
+    background-color: rgb(240, 218, 190);
+}
+.note-l{
+    background-color: white;
+    position: fixed;
+    top: 70px;
+    left: 5%;
+    height: 80%;
+    width: 20%;
+    text-align: center;
+}
+.note-index{
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+}
+.note-now{
+    position: relative;
+    text-align: center;
+    line-height: 0px;
+    margin-bottom: 5px;
+    width: 95% - 5px;
+    left: 0%;
+    right: 5% + 5px;
+    height: 30px;
+    border: 1px solid rgb(173, 166, 166);
+    border-left: 5px solid rgb(129, 179, 235);
+    border-radius: 5px;
+}
+.note-now:hover{
+    /* border-left: 5px solid rgb(240, 147, 167); */
+    background-color: beige;
+}
+.note{
+    position: relative;
+    text-align: center;
+    line-height: 0px;
+    margin-bottom: 5px;
+    width: 90% - 5px;
+    left: 0%;
+    right: 5%;
+    height: 30px;
+    border: 1px solid rgb(173, 166, 166);
+    border-left: 5px solid rgb(216, 235, 129);
+    border-radius: 5px;
+}
+a{
+    text-decoration-line:none;
+}
+.note:hover{
+    /* border-left: 5px solid rgb(240, 147, 167); */
+    background-color: beige;
+}

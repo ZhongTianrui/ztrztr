@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title> Web Note --Register</title>
+        <link rel = "stylesheet" href = "/style/main.css">
+        <!-- <script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous"></script> -->
+        <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script> -->
+    </head>
+    <body>
+        <div class = "top">
+            <div class = "top-index">
+                <!-- <div class = "top-box-left"><p>Web Note</p></div> -->
+                <a href = "/"><div class = "top-box-left"><p>Main Page</p></div></a>
+                <a href="/notes"><div class = "top-box"><p>My Notes</p></div></a>
+                <a href="/post/talk"><div class = "top-box"><p>Post Talk</p></div></a>
+                <!-- <a href="/login"><div class = "top-box"><p>Login</p></div></a>
+                <a href="/reg"><div class = "top-box"><p>Register</p></div></a> -->
+            </div>
+            <div class = "top-right">
+                <a href="/login"><div class = "top-box"><p>Login</p></div></a>
+                <a href="/reg"><div class = "top-box-now"><p>Register</p></div></a>
+            </div>
+        </div>
+        <div class = "index">
+            <div class = "p-mid"><h1> REGISTER </h1></div>
+            <form id = "reg">
+                <div> Username: <input name = "u" id = "username" type="text" class = "input" /></div>
+                <br>
+                <div> Password: <input name = "p" id = "password" type = "password" class = "input" /> </div>
+                <br>
+                <div> <button type="submit" class = "btn-rad100"> Submit </button> </div>
+            </form>
+        </div>
+        <Print/>
+        <script>
+            // const socket = io("");
+            // // client-side
+            // // console.log(socket.connected); // true
+            // socket.on("connect", () => {
+            //     console.log(socket.id); // true
+            // });
+        </script>
+        <script src = "/script/reg.js"> </script>
+    </body>
+</html>

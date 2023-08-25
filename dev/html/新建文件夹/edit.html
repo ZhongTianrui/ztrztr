@@ -1,0 +1,34 @@
+<html>
+    
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>
+            Dote
+        </title>
+        <link rel="stylesheet" href="https://unpkg.com/vditor/dist/index.css"
+        />
+        <script src="https://unpkg.com/vditor/dist/index.min.js">
+        </script>
+    </head>
+    
+    <body>
+        <div class = "top">
+        </div>
+        <input type="button" onclick="getContent()" value="确定" class = "submit-button" />
+        <div id="content">
+        </div>
+        <script>
+            var vditor = null;
+            window.onload = function() {
+                vditor = new Vditor(document.getElementById('content'), {
+                    cache: {
+                        enable: false
+                    },
+                    "value": "",
+                    "mode":"ir"
+                });
+            } // 测试数据填充            function getContent() {
+        </script>
+    </body>
+
+</html>

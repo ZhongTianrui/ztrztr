@@ -9,7 +9,7 @@ int find(int a[], int n, int x) {
     int ans = -1;
 	int l = 1, r = n;
 	while (l < r) {
-		int mid = (l + r) / 2;
+		int mid = l+(r-l)/2;
 		if (check(mid, a, x)) {
             r = mid - 1;
         }
@@ -18,14 +18,14 @@ int find(int a[], int n, int x) {
 	}
 	return (a[l] == x ? l : -1);
 }
+int n, a[1000005], x;
 int main() {	
 	cin.tie(0); cout.tie();
-	int n, a[100005], x;
 	cin >> n >> x;
 	for (int i = 1; i <= n; i ++) cin >> a[i];
 	while (x --) {
 	    int xx; cin >> xx;
-	    cout << (a[lower_bound(a + 1, a + n + 1, xx) - a] == xx ? lower_bound(a + 1, a + n + 1, xx) - a : -1) << " ";
+	    cout << find(a, n, xx) << " ";
 	}
 	return 0;
 }

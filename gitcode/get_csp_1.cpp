@@ -19,11 +19,12 @@ bool cmp(node x, node y) {
 }
 namespace OI{
 	void run() {
-		freopen("csp_2022_notinit.txt", "r", stdin);
+		freopen("csp_s_notsort.txt", "r", stdin);
 		map <string, int> mp;
 		string s;
-		while (cin >> s) {
-			mp[s] ++;
+		int cnt;
+		while (cin >> s >> cnt) {
+			mp[s] = cnt;
 		}
 		int j = 1;
 		for (auto i = mp.begin(); i != mp.end(); i ++, j ++) {
@@ -31,7 +32,7 @@ namespace OI{
 			ar[j].b = i -> second; 
 //			cout << ar[j].a << " " << ar[j].b << "\n";
 		}
-		freopen("csp_2022_data.txt", "w", stdout);
+		freopen("csp_s_data.txt", "w", stdout);
 		sort(ar + 1, ar + mp.size() + 1, cmp);
 //		cout << ar[mp.size()].a << "\n";
 		for (int i = 1; i <= mp.size(); i ++) {
