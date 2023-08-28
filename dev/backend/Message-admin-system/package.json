@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "markdown-palettes": "^0.4.13",
     "react": "^18.2.0",
     "socket.io": "^4.7.2"
   }

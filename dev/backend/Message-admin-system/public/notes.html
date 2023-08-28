@@ -2,8 +2,34 @@
     <head>
         <title> Web Note --My note</title>
         <link rel="stylesheet" href="style/main.css">
+        <!-- <link rel="stylesheet" href="https://unpkg.com/vditor/dist/index.css" -->
+        <!-- /> -->
+        <!-- <script src="https://unpkg.com/vditor/dist/index.min.js"> -->
+        </script>
+        <!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.css" />
+        <link rel="stylesheet" href="https://uicdn.toast.com/tui-editor/latest/tui-editor.css"></link>
+        <link rel="stylesheet" href="https://uicdn.toast.com/tui-editor/latest/tui-editor-contents.css"></link> -->
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.48.4/codemirror.min.css"
+      />
+      <!-- Editor's Style -->
+      <link rel="stylesheet" href="https://uicdn.toast.com/editor/2.5.2/toastui-editor.min.css" />
+        <!-- <script src="https://uicdn.toast.com/tui-editor/latest/tui-editor-Editor-full.min.js"></script> -->
+
+<script type="text/javascript" async
+src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>        
+<link rel="stylesheet" href="markdown-palettes.css">
+<script src="markdown-palettes.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+});
+</script>
     </head>
     <body>
+        <script src="https://uicdn.toast.com/tui-editor/latest/tui-editor-Editor-full.min.js"></script>
         <script>
             var ID = localStorage.getItem('ID');
             fetch('/api/getUserByID?ID=' + ID, {
@@ -44,12 +70,63 @@
                     <p>Test</p>
                 </div>
                 </a>
-                <a href="#Test2">
+                <a href="javascript:void(0);" onclick="js_method()">
                     <div class = "note">
                         <p>Test2</p>
                     </div>
                 </a>
             </div>
         </div>
+        <!-- <link rel="stylesheet" href="MarkdownPalettes.css">
+<div id="editor-container" style="height: 700px;">
+  <markdown-palettes v-model="value"></markdown-palettes>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5"></script>
+<script src="MarkdownPalettes.common.js"></script>
+<script>
+  var app = new Vue({
+    el: '#editor-container',
+    components: { MarkdownPalettes },
+    data: () => { value : 'Hello, **Markdown*Palettes**!' }
+  }) -->
+</script>
+        <div class = "note-edit-main" id = "editor-container">
+            <div id="editor"></div>
+        </div>
+
+<script>
+var editor = new MarkdownPalettes('#editor');
+editor.contenet = "**c55555555555555ontent**";
+editor.data = "1111";
+  var code = editor.content;
+</script>
+        <script>
+            
+            // var vditor = null;
+            // window.onload = function() {
+            //     vditor = new Vditor(document.getElementById('note-edit'), {
+            //         cache: {
+            //             enable: false
+            //         },
+            //         "mode": "ir",
+            //     });
+            // } // 测试数据填充            function getContent() {
+            // // vditor.setValue("## 测试 \n ### 二级标题 ");
+//             console.log("111111111111")
+// // window.onload 事件是在dom挂载结束后触发
+// window.onload = function(){
+//   console.log("DOM加载完毕--划重点")
+//   const Editor = toastui.Editor;
+//   const editor = new Editor({
+//     el: document.querySelector('#editor'),
+//     height: '600px',
+//     initialEditType: 'markdown',
+//     previewStyle: 'vertical'
+//   });
+
+//   editor.getHtml();
+// }
+        </script>
+        <!-- <script src="https://uicdn.toast.com/editor/2.5.2/toastui-editor-all.min.js"></script> -->
     </body>
 </html>
