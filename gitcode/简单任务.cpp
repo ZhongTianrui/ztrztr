@@ -8,7 +8,7 @@ struct node{
     long long x, y;
 } a[1005];
 bool cmp(node x, node yy) {
-    return x.y < yy.y;
+    return x.y > yy.y;
 }
 int main() {
     ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);

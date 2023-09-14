@@ -7,12 +7,11 @@ spfa.
 #define MAX 100005
 #define node int
 #define INF 0x7fffffff
-vector <long long> edge[MAX], edgeValue[MAX];
+
 long long n, m, minDistance[MAX], visited[MAX], cnt[MAX];
 node start;
 void SPFA() {
-    memset(cnt,0,sizeof(cnt));
-	memset(visited,0,sizeof(visited));
+    vector <long long> edge[MAX], edgeValue[MAX];
     cin >> n >> m;
     start = 1;
     for (int i = 1; i <= m; i ++) {
@@ -20,7 +19,14 @@ void SPFA() {
         cin >> from >> to >> value;
         edge[from].push_back(to);
         edgeValue[from].push_back(value);
+        if (value >= 0) {
+            edge[to].push_back(from);
+            edgeValue[to].push_back(value);
+        }
     }
+        fill(minDistance+1,minDistance+n+1,0x7fffffff);
+    memset(cnt,0,sizeof(cnt));
+	memset(visited,0,sizeof(visited));
     //This is input.
     for (int i = 1; i <= n; i ++) minDistance[i] = INF;
     minDistance[start] = 0;
